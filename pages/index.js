@@ -27,7 +27,7 @@ export default class extends React.Component {
             });
 
             return data;
-            
+
         })(require.context("../content", true, /\.md$/));
 
         return {
