@@ -1,5 +1,5 @@
 ---
-title: Home Page
+title: Test Post
 date: 2019-03-17T19:31:20.591Z
 writtenBy: Clint Kolodziej
 cats:
@@ -12,6 +12,4 @@ cats:
   - description: 'Big bob is like garfield, but not orange'
     name: Bob
 ---
-Welcome to my awesome page about cats of the internet. 
-
-This page is built with NextJS, and content is managed in Netlify CMS
+This is a test
