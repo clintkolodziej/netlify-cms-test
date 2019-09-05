@@ -1,5 +1,5 @@
 ---
-title: Awesome kitties
+title: Awesome kitties that scratch all the furniture
 date: 2019-03-17T19:31:20.591Z
 cats:
   - description: 'Maru is a Scottish Fold from Japan, and he loves boxes.'
@@ -8,6 +8,8 @@ cats:
     name: Lil Bub
   - description: 'Grumpy cat is an American celebrity cat known for her grumpy appearance. '
     name: Grumpy cat (Tardar Sauce)
+  - description: 'Big bob is like garfield, but not orange'
+    name: Bob
 ---
 Welcome to my awesome page about cats of the internet. 
 
