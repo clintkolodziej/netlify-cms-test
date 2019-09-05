@@ -6,18 +6,27 @@ export default class extends React.Component {
 
     static async getInitialProps({ query }) {
 
-        let content = await require(`../../content/${query.pid}.md`);
+        try{
+            let content = await require(`../../content/${query.pid}.md`);
 
-        const document = matter(content.default);
+            const document = matter(content.default);
 
-        return {
-          ...document
-        };
+            return {
+                ...document
+            };
+        }
+        catch (error) {
 
+            return {};
+
+        }
     }
 
     render() {
 
+        if (!this.props.data)
+            return <div>Post is not found</div>;
+            
         return (
             <>
 
