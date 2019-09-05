@@ -6,6 +6,7 @@ export default class Home extends Component {
     let { html , attributes:{ title, cats } } = content;
     return (
       <article>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <h1>{title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }}/>
           <ul>
