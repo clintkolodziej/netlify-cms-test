@@ -1,8 +1,11 @@
 import React from 'react'
 import matter from 'gray-matter';
 import Link from 'next/link';
+
 export default class extends React.Component {
+
     static async getInitialProps() {
+
         // Get posts from folder
         const posts = (ctx => {
             //console.log("context", ctx);
@@ -34,11 +37,16 @@ export default class extends React.Component {
             posts
         };
     }
+
     render() {
+        
         return (
             <>
-                <h1>Posts: {this.props.posts.slug}</h1>
+
+                <h1>Posts:</h1>
+
                 {this.props.posts.map(({ document: { data }, slug }) => (
+
                     <Link 
                       href="/post/[pid]" key={slug}
                       as={`/post/${slug}`}>
@@ -46,7 +54,9 @@ export default class extends React.Component {
                     </Link>
                     
                 ))}
+                
             </>
         )
+
     }
 }
