@@ -13,3 +13,5 @@ cats:
     name: Bob
 ---
 This is just a quick test of editing the homepage
+
+![Grumpy Clint](/static/img/clint-grumpy.jpg "Grumpy Clint")
